@@ -1,0 +1,79 @@
+body{
+    background: #e8e8e8;
+}
+
+.logo{
+    position: absolute;
+    top: 4%;
+    left: 3%;
+    width: 8%;
+    height: 5%;
+}
+
+.escribir-texto-encriptar{
+    position: absolute;
+    top: 16%;
+    left: 17%;
+    width: 40%;
+    height: 5%;
+    background: #e8e8e8;
+    border: none;
+    resize: vertical;
+    overflow: hidden;
+}
+
+.escribir-texto-encriptar::placeholder{
+    font-size: 215%;
+    color: darkblue;
+    text-align: left;
+}
+
+.texto-encriptado{
+    position: absolute;
+    top: 4%;
+    left: 69%;
+    width: 28%;
+    height: 88.5%;
+}
+
+.contenedor-elementos-textarea{
+    position: absolute;
+    top: 23%;
+    left: 72%;
+    height: 42%;
+    width: 23%;
+}
+
+.primer-placeholder-textarea{
+    font-size: 160%;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.segundo-placeholder-textarea{
+    font-size: 1em;
+    text-align: center;
+}
+
+.contenedor-encriptador{
+    position: absolute;
+    border-radius: 24px;
+    top: 86%;
+    left: 17%;   
+    width: 47%;
+    height: 7%;
+}
+
+.encriptador, .desencriptador{
+    width: 48%;
+    height: 100%;
+    float: left;
+    margin-left: 2%;
+    box-sizing: border-box;
+}
+
+footer{
+    position: absolute;
+    top: 95%;
+}
