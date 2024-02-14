@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Encriptador de texto</title>
+</head>
+<body>
+    <!-- Insertar logo de Alura -->
+    <header class="logo">
+        <h1 ><img src="imagenes/Logo.png"></h1>
+    </header>
+
+    <main>
+        <!-- Primer input para escribir texto y segundo para mostrarlo -->
+        <textarea class="escribir-texto-encriptar" placeholder="Ingrese texto aquí"></textarea>
+        <textarea class="texto-encriptado" readonly></textarea>
+
+        <!-- Elementos que hacen la función de placeholder -->
+        <div class="contenedor-elementos-textarea">
+            <img src="imagenes/muneco.png" class="muneco">
+            <p class="primer-placeholder-textarea">Ningún mensaje fue encontrado</p>
+            <p class="segundo-placeholder-textarea">Ingresa el texto que deseas encriptar o desencriptar</p>
+        </div>
+
+        <!-- Botones encargados de las funcionalidades -->
+        <div class="contenedor-encriptador">
+            <button class="encriptador">Encriptar</button>
+            <button class="desencriptador">Desencriptar</button>
+        </div>
+        
+    </main>
+    
+    <footer>
+        <p class="datos-personales">&#169 Brandon Restrepo | Encriptador de texto JS | 2024</p>
+    </footer>
+</body>
+</html>
