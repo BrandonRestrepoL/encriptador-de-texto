@@ -161,7 +161,8 @@ footer{
     }
 
     .contenedor-elementos-textarea{
-        top: 79%;
+        top: 82%;
+        font-size: small;
     }
 
     .instruccion{
@@ -186,5 +187,6 @@ footer{
 
     footer{
         top: 97%;
+        font-size: smaller;
     }
 }
