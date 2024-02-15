@@ -20,10 +20,11 @@ body{
     border: none;
     resize: vertical;
     overflow: hidden;
+    font-size: 215%;
+    color: darkblue;
 }
 
 .escribir-texto-encriptar::placeholder{
-    font-size: 215%;
     color: darkblue;
     text-align: left;
 }
@@ -33,12 +34,13 @@ body{
     top: 4%;
     left: 69%;
     width: 28%;
-    height: 88.5%;
+    height: 90%;
+    border-radius: 32px;
 }
 
 .contenedor-elementos-textarea{
     position: absolute;
-    top: 23%;
+    top: 20%;
     left: 72%;
     height: 42%;
     width: 23%;
@@ -56,6 +58,13 @@ body{
     text-align: center;
 }
 
+.instruccion{
+    position: absolute;
+    top: 82%;
+    left: 18%;
+    color: gray;
+}
+
 .contenedor-encriptador{
     position: absolute;
     border-radius: 24px;
@@ -71,9 +80,89 @@ body{
     float: left;
     margin-left: 2%;
     box-sizing: border-box;
+    border-radius: 24px;
+    color: darkblue;
+}
+
+.encriptador{
+    background-color: darkblue;
+    color: white;
 }
 
 footer{
     position: absolute;
     top: 95%;
+}
+
+.datos-personales {
+    border-top: 2px solid #333; /* Borde superior */
+    box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.1); /* Sombra en la parte inferior */
+    padding: 5px; /* Agrega espacio alrededor del contenido del footer */
+  }
+
+@media screen and (max-width:1100px) {
+    
+    .escribir-texto-encriptar{
+        position: absolute;
+        left: 7%;
+    }
+
+    .texto-encriptado{
+        top: 82.5%;
+        left: 5%;
+        height: 11%;
+        width: 90%;
+    }
+
+    .contenedor-elementos-textarea{
+        height: 6%;
+        width: 81%;
+        top: 85.5%;
+        left: 10%;
+        font-size: larger;
+    
+    }
+
+    .instruccion{
+        top: 72%;
+    }
+
+    .contenedor-encriptador{
+        position: absolute;
+        top: 74%;
+        left: 4%;
+        width: 90%;
+        height: 6%;
+    }
+
+    .muneco{
+        display: none;
+    }
+}
+
+@media screen and (max-width:430px) {
+    .logo{
+        position: absolute;
+        top: 2%;
+        left: -5%;
+    }
+
+    .escribir-texto-encriptar{
+        position: absolute;
+        width: 91%;
+        height: 5%;
+    }
+
+    .instruccion{
+        position: absolute;
+        top: 48%;
+        left: 4%;
+    }
+
+    .contenedor-encriptador{
+        position: absolute;
+        top: 52%;
+        left: 4%;
+        
+    }
 }
