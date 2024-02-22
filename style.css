@@ -18,10 +18,10 @@ body{
     height: 5%;
     background: #e8e8e8;
     border: none;
-    resize: vertical;
     overflow: hidden;
     font-size: 215%;
     color: darkblue;
+    resize: none;
 }
 
 .escribir-texto-encriptar::placeholder{
@@ -31,11 +31,14 @@ body{
 
 .texto-encriptado{
     position: absolute;
+    text-align: center;
+    font-size: 2em;
     top: 4%;
     left: 69%;
-    width: 28%;
-    height: 90%;
+    width: 26%;
+    height: 83%;
     border-radius: 32px;
+    padding: 1em;
 }
 
 .contenedor-elementos-textarea{
@@ -154,14 +157,14 @@ footer{
     }
 
     .texto-encriptado{
-        top: 76%;
+        top: 73%;
         left: 6%;
         width: 87%;
-        height: 18%;
+        height: 20%;
     }
 
     .contenedor-elementos-textarea{
-        top: 82%;
+        top: 80%;
         font-size: small;
     }
 
