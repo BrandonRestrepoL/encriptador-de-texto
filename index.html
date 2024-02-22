@@ -15,11 +15,11 @@
 
     <main>
         <!-- Primer input para escribir texto y segundo para mostrarlo -->
-        <textarea class="escribir-texto-encriptar" placeholder="Ingrese texto aquí"></textarea>
-        <textarea class="texto-encriptado" readonly></textarea>
+        <textarea  id="texto-a-encriptar" class="escribir-texto-encriptar" placeholder="Ingrese texto aquí" type="text" oninput="autoAjustarAltura()"></textarea>
+        <textarea id="oracion-encriptada" class="texto-encriptado" ></textarea>
 
         <!-- Elementos que hacen la función de placeholder -->
-        <div class="contenedor-elementos-textarea">
+        <div class="contenedor-elementos-textarea" id="placeholde">
             <img src="imagenes/muneco.png" class="muneco">
             <p class="primer-placeholder-textarea">Ningún mensaje fue encontrado</p>
             <p class="segundo-placeholder-textarea">Ingresa el texto que deseas encriptar o desencriptar</p>
@@ -30,16 +30,16 @@
 
             <!-- Botones encargados de las funcionalidades -->
             <div class="contenedor-encriptador">
-                <button class="encriptador">Encriptar</button>
-                <button class="desencriptador">Desencriptar</button>
+                <button class="encriptador" onclick="encriptar()">Encriptar</button>
+                <button class="desencriptador" onclick="desencriptar()">Desencriptar</button>
             </div>
         </div>
-        
-        
     </main>
     
     <footer>
         <p class="datos-personales">&#169 Brandon Restrepo | Encriptador de texto JS | 2024</p>
     </footer>
+
+    <script src="app.js"></script>
 </body>
 </html>
