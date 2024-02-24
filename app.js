@@ -2,8 +2,9 @@
 let textoEncriptar = document.getElementById("texto-a-encriptar");
 let textoFinal = document.getElementById("oracion-encriptada");
 let elementosTextarea = document.getElementById("placeholde");
-let datosEncriptacion = ["enter", "imea", "ai", "ober", "ufat"];
-let regex = new RegExp(datosEncriptacion.join("|"), "g");
+let copiar = document.getElementById("copiar");
+const datosEncriptacion = ["enter", "imea", "ai", "ober", "ufat"];
+const regex = new RegExp(datosEncriptacion.join("|"), "g");
 
 //Quitando las tíldes de las string para evitar errores
 function quitarTildes(cadena){
@@ -41,10 +42,14 @@ function ocultarElementos(){
     elementosTextarea.style.display = "none"
 }
 
+function mostrarBoton(){
+    copiar.style.display = "block"
+}
+
 //Funcionalidad que encripta la string del usuario
 function encriptar(){
 
-    let provisional = textoEncriptar.value
+    let provisional = textoEncriptar.value  
     let temporal = quitarMayusculasyCaracteres(provisional)
     textoEncriptar.value = ""
     
@@ -62,11 +67,16 @@ function encriptar(){
 
     textoFinal.value = textoEncriptado
     ocultarElementos();
-    
+    mostrarBoton();
 }
 
 //Funcionalidad de autorezise para el input del usuario
 textoEncriptar.addEventListener("input", function(){
+    this.style.height = "auto";
+    this.style.height = `${this.scrollHeight}px`;
+})
+
+textoFinal.addEventListener("input", function(){
     this.style.height = "auto";
     this.style.height = `${this.scrollHeight}px`;
 })
@@ -90,4 +100,20 @@ function desencriptar(){
     })
 
     textoFinal.value = textoEncriptado
+}
+
+function copiarTexto(){
+    let range = document.createRange();
+    range.selectNode(textoFinal);
+
+    window.getSelection().removeAllRanges();
+    window.getSelection().addRange(range);
+
+    try{
+        document.execCommand("copy");
+    } catch (err) {
+        console.error("Error al copiar: ", err)
+    }
+      
+    window.getSelection().removeAllRanges();
 }

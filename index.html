@@ -15,7 +15,7 @@
 
     <main>
         <!-- Primer input para escribir texto y segundo para mostrarlo -->
-        <textarea  id="texto-a-encriptar" class="escribir-texto-encriptar" placeholder="Ingrese texto aquí" type="text" oninput="autoAjustarAltura()"></textarea>
+        <textarea  id="texto-a-encriptar" class="escribir-texto-encriptar" placeholder="Ingrese texto aquí"></textarea>
         <textarea id="oracion-encriptada" class="texto-encriptado" ></textarea>
 
         <!-- Elementos que hacen la función de placeholder -->
@@ -24,6 +24,8 @@
             <p class="primer-placeholder-textarea">Ningún mensaje fue encontrado</p>
             <p class="segundo-placeholder-textarea">Ingresa el texto que deseas encriptar o desencriptar</p>
         </div>
+
+         <button id="copiar" onclick="mostrarBoton(); copiarTexto()">Copiar</button>
 
         <div class="contenedor-encriptadores">
             <p class="instruccion"><img src="imagenes/Group.png"> letras minúsculas y sin acentos</p>
@@ -34,6 +36,7 @@
                 <button class="desencriptador" onclick="desencriptar()">Desencriptar</button>
             </div>
         </div>
+
     </main>
     
     <footer>
