@@ -76,11 +76,6 @@ textoEncriptar.addEventListener("input", function(){
     this.style.height = `${this.scrollHeight}px`;
 })
 
-textoFinal.addEventListener("input", function(){
-    this.style.height = "auto";
-    this.style.height = `${this.scrollHeight}px`;
-})
-
 //Funcionalidad para desencriptar el texto 
 function desencriptar(){    
     let provisional = textoEncriptar.value
