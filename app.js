@@ -3,7 +3,6 @@ let textoEncriptar = document.getElementById("texto-a-encriptar");
 let textoFinal = document.getElementById("oracion-encriptada");
 let elementosTextarea = document.getElementById("placeholde");
 let copiar = document.getElementById("copiar");
-const datosEncriptacion = ["enter", "imea", "ai", "ober", "ufat"];
 const regex = new RegExp(datosEncriptacion.join("|"), "g");
 
 //Quitando las tíldes de las string para evitar errores
@@ -59,9 +58,9 @@ function encriptar(){
         "i" : "imea", 
         "o" : "ober",
         "u" : "ufat"
-    },
+    }
 
-    textoEncriptado = temporal.replace(/[aeiou]/g, function(match){
+    const textoEncriptado = temporal.replace(/[aeiou]/g, function(match){
     return datosEncriptacion[match]
     })
 
@@ -88,9 +87,9 @@ function desencriptar(){
         "imea" : "i", 
         "ober" : "o",
         "ufat" : "u"
-    },
+    }
 
-    textoEncriptado = temporal.replace(regex, function(match){
+    const textoEncriptado = temporal.replace(regex, function(match){
     return datosEncriptacion[match]
     })
 
