@@ -3,6 +3,7 @@ let textoEncriptar = document.getElementById("texto-a-encriptar");
 let textoFinal = document.getElementById("oracion-encriptada");
 let elementosTextarea = document.getElementById("placeholde");
 let copiar = document.getElementById("copiar");
+let datosEncriptacion = ["enter", "imea", "ai", "ober", "ufat"];
 const regex = new RegExp(datosEncriptacion.join("|"), "g");
 
 //Quitando las tíldes de las string para evitar errores
